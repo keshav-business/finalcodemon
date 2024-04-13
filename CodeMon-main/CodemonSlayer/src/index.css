@@ -1,0 +1,186 @@
+/* ----------------- Important Imports ------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Jersey+20&family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ------------------ Font Setting start ------------------ */
+
+.font-mukta {
+  font-family: "Mukta", sans-serif;
+  font-style: normal;
+}
+
+.font-jersey {
+  font-family: "Jersey 20", sans-serif;
+  font-style: normal;
+}
+
+/* ------------------ Font Setting End ------------------ */
+
+/* ------------------ Loader CSS Start ------------------ */
+
+.excite_btn {
+  background-image: url("https://i.pinimg.com/564x/ea/a0/b2/eaa0b27f39456227ceca4873d4bdd9fe.jpg");
+  cursor: pointer;
+  box-shadow: 0 0 150px rgba(211, 61, 245, 0.7), 0 0 50px rgba(211, 61, 245, 0.3);
+}
+
+/* ------------------ Loader CSS End ------------------ */
+
+/* ------------------ Media Queries Start ------------------ */
+
+@media screen and (max-width: 320px) {
+
+  .loader_btnContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .loader_mainText {
+    font-size: 1.8rem;
+  }
+
+  .loader_button {
+    font-size: 1rem;
+  }
+
+  .loader_btnContainer {
+    gap: 8px;
+  }
+}
+
+@media screen and (max-width: 375px) and (min-width: 320px) {
+
+  .loader_mainText {
+    font-size: 1.8rem;
+  }
+
+  .loader_button {
+    font-size: 1rem;
+  }
+
+  .loader_btnContainer {
+    gap: 8px;
+  }
+}
+
+@media screen and (max-width: 425px) and (min-width: 375px) {
+
+  .loader_mainText {
+    font-size: 1.8rem;
+  }
+
+  .loader_button {
+    font-size: 1rem;
+  }
+
+  .loader_btnContainer {
+    gap: 12px;
+  }
+}
+
+@media screen and (max-width: 624px) and (min-width: 425px) {
+
+  .loader_mainText {
+    font-size: 2.3rem;
+  }
+
+  .loader_button {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .loader_container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .loader_mainText {
+    font-size: 2.3rem;
+  }
+
+  .loader_button {
+    font-size: 1rem;
+  }
+}
+
+/* ------------------ Media Queries End ------------------ */
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
